@@ -113,59 +113,100 @@
                             </ul>
                         </div>
                         <div class="col-lg-9" id="main" style="height: 900px;">
-                            <div id="friend-title">我的好友清單
-                                <button type="button" class="friend-Add">+加入好友</button>
-                            </div>
-                            <div id="friend-list">
-                                <table class="tg">
-                                    <thead>
-                                        <tr>
-                                            <th class="tg-c3ow">姓名</th>
-                                            <th class="tg-c3ow">E-mail</th>
-                                            <th class="tg-c3ow">手機</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                            <td class="tg-c3ow"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="container py-5 text-center">
+                                <div id="friend-title">我的好友清單
+                                    <button type="button" class="friend-Add" data-toggle="modal"
+                                        data-target="#modalAdd">
+                                        +加入好友
+                                    </button>
+                                </div>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modalAdd">
+                                    <div class="modal-dialog modal-bulletin" role="document">
+                                        <button type="button" class="close" data-dismiss="modal"></button>
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <h3 class="text-success text-center">請以E-mail或電話號碼搜尋</h3>
+                                                <!-- 核取方塊的結構為，父元素為.form-check -->
+                                                <!-- 再來第二層是label.form-check-label，裡面包input.form-check-input -->
+                                                <!-- .form-check-inline，讓整個核取方塊呈現一行 -->
+                                                <!-- 選項按鈕的功能主要是單選的選項，這裡怎麼點全部都能點到，所以選項按鈕全部都要加name=".."以及value="a,b,c.." -->
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">
+                                                        <input type="radio" name="demo" value="a"
+                                                            class="form-check-input">
+                                                        E-mail
+                                                    </label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <label class="form-check-label">
+                                                        <input type="radio" name="demo" value="b"
+                                                            class="form-check-input">
+                                                        電話號碼
+                                                    </label>
+                                                </div>
+                                                <input type="text" />
+                                                <button type="button" class="friend-submit">搜尋</button>
+                                                <img src="img/Male.png" alt="Test Men" /><br>
+                                                <button type="button" class="friend-check">傳送交友邀請</button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <div id="friend-list">
+                        <table class="tg">
+                            <thead>
+                                <tr>
+                                    <th class="tg-c3ow">姓名</th>
+                                    <th class="tg-c3ow">E-mail</th>
+                                    <th class="tg-c3ow">手機</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                    <td class="tg-c3ow"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
         </div>
+    </div>
+    </div>
 
-        <!-- <頁數選擇欄位> -->
-        <!-- <section class="bg-light py-10">
+    <!-- <頁數選擇欄位> -->
+    <!-- <section class="bg-light py-10">
                         <div class="container">
                             <div class="row justify-content-center">
                             <div class="col-lg-2" style="border: solid red;">
@@ -191,7 +232,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"></svg>
                         </div>
                     </section> -->
-        </main>
+    </main>
     </div>
     <div id="layoutDefault_footer">
         <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
@@ -213,6 +254,8 @@
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script src="js/Customize.js"></script>
+    <script>
+    </script>
 </body>
 
 </html>
