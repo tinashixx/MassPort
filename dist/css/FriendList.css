@@ -13,7 +13,11 @@
     right:50px;
 }
 .friend-Add.active,
-.friend-Add:hover{
+.friend-Add:hover,
+.friend-submit.active,
+.friend-submit:hover,
+.friend-check.active,
+.friend-check:hover{
     background: #DB7243;
     color: #eee;
     border: 1px solid #DB7243;
@@ -57,7 +61,7 @@
     vertical-align:top
 }
 
-.friend-check,.friend-submit{
+.friend-submit{
     margin: 20px 10px 10px 10px;
 }
 
