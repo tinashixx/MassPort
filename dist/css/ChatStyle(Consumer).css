@@ -3,14 +3,15 @@
     display: grid;
     grid:
         'search-container chat-title' 8%
-        'conversation-list chat-message-list' 84%
-        'new-message-container chat-form' 8%
+        'conversation-list chat-message-list' 80%
+        'new-message-container chat-form' 10%
         /0% 100%;  
     width: 100%;
     height: 100%;
     background: #FFF;
     border-radius: 10px;
 }
+
 
 #search-container,
 #conversation-list,
@@ -141,7 +142,7 @@
     overflow-y: scroll;
 }
 
-.message-row{ 
+.clearfix{ 
     display: grid;
     grid-template-columns: 70%;
     margin-bottom: 20px;
@@ -156,41 +157,41 @@
     justify-items: start;
 }
 
-.message-text{ 
+.message-data-time{  
+    font-size: 12px;
+    color: #777;
+}
+
+.you-message .message{   
+    background: #5B352C;
+    color: #eee;
+    border: 1px solid #5B352C;
+    border-radius: 14px 14px 0 14px;
     padding: 9px 14px;
     font-size: 14px;
     margin-bottom: 5px;
 }
 
-.message-time{  
-    font-size: 12px;
-    color: #777;
-}
-
-.you-message .message-text{   
-    background: #5B352C;
-    color: #eee;
-    border: 1px solid #5B352C;
-    border-radius: 14px 14px 0 14px;
-}
-
-.other-message .message-text{ 
+.other-message .message{ 
     background: #eee;
     color: #111;
     border: 1px solid #ddd;
     border-radius: 14px 14px 14px 0 ;
+    padding: 9px 14px;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 #chat-form{  
     display: grid;
-    grid-template-columns: 10% 60% 20%;
+    grid-template-columns: 73% 25%;
     align-content: center;
     align-items: center; 
     grid-gap: 15px;
     grid-area: chat-form;
     border-radius: 0 0 10px 0;
     border-top: 1px solid rgba(0,0,0,0.25);
-    padding: 20px 15px 20px 15px;
+    padding: 20px 15px 10px 15px;
 }
 
 #chat-form input{   
@@ -199,14 +200,8 @@
     font-weight: bold;
     height: 30px;
     width: 100%;
-    padding: 1px 0px 1px 10px;
+    padding: 1px 10px 1px 10px;
     font-size: 14px;
-}
-
-#chat-form >img{
-    cursor: pointer;
-    width: 100%;
-    height: 30px;
 }
 
 #chat-form button{

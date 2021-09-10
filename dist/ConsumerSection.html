@@ -80,6 +80,7 @@
                     </div>
                 </header>
 
+
                 <div class="container" id="AsideAndMain">
                     <div class="row align-items-start">
 
@@ -112,269 +113,147 @@
                                 </li>
                             </ul>
                         </div>
+
                         <div class="col-lg-9" id="main" style="height: 900px;">
-                            <div id="chat-container">
-                                <!-- <div id="search-container">
-                                    <input type="text" placeholder="search" />
-                                </div> -->
-                                <!-- 消費者清單 Start-->
-                                <!-- <div id="conversation-list">
-                                    <div class="conversation">
-                                        <img src="img/Male.png" alt="Test Men" />
-                                        <div class="title-text">
-                                            Test Men Test Men Test Men
-                                        </div>
-                                        <div class="created-date">
-                                            2021/07/15
-                                        </div>
-                                        <div class="conversation-message">
-                                            This is a message.This is a message.This is a message.This is a message.This
-                                            is a
-                                            message.
+                            <div class="chat" id="chat-container">
+                                <div class="chat-header clearfix" id="chat-title">
+                                    <div class="chat-about">
+                                        <div class="chat-with">
+                                            <span>TestMen</span>
                                         </div>
                                     </div>
-                                    <div class="conversation">
-                                        <img src="img/FeMale.png" alt="Test Women" />
-                                        <div class="title-text">
-                                            Test Women Test Women Test Women
-                                        </div>
-                                        <div class="created-date">
-                                            2021/07/15
-                                        </div>
-                                        <div class="conversation-message">
-                                            This is a message.This is a message.This is a message.This is a message.This
-                                            is a
-                                            message.
-                                        </div>
-                                    </div>
-                                    <div class="conversation">
-                                        <img src="img/Male.png" alt="Test Men" />
-                                        <div class="title-text">
-                                            Test Men Test Men Test Men
-                                        </div>
-                                        <div class="created-date">
-                                            2021/07/15
-                                        </div>
-                                        <div class="conversation-message">
-                                            This is a message.This is a message.This is a message.This is a message.This
-                                            is a
-                                            message.
-                                        </div>
-                                    </div>
-                                    <div class="conversation">
-                                        <img src="img/FeMale.png" alt="Test Women" />
-                                        <div class="title-text">
-                                            Test Women Test Women Test Women
-                                        </div>
-                                        <div class="created-date">
-                                            2021/07/15
-                                        </div>
-                                        <div class="conversation-message">
-                                            This is a message.This is a message.This is a message.This is a message.This
-                                            is a
-                                            message.
-                                        </div>
-                                    </div>
-                                    <div class="conversation">
-                                        <img src="img/Male.png" alt="Test Men" />
-                                        <div class="title-text">
-                                            Test Men Test Men Test Men
-                                        </div>
-                                        <div class="created-date">
-                                            2021/07/15
-                                        </div>
-                                        <div class="conversation-message">
-                                            This is a message.This is a message.This is a message.This is a message.This
-                                            is a
-                                            message.
-                                        </div>
-                                    </div>
-                                    <div class="conversation">
-                                        <img src="img/FeMale.png" alt="Test Women" />
-                                        <div class="title-text">
-                                            Test Women Test Women Test Women
-                                        </div>
-                                        <div class="created-date">
-                                            2021/07/15
-                                        </div>
-                                        <div class="conversation-message">
-                                            This is a message.This is a message.This is a message.This is a message.This
-                                            is a
-                                            message.
-                                        </div>
-                                    </div>
-                                    <div class="conversation">
-                                        <img src="img/Male.png" alt="Test Men" />
-                                        <div class="title-text">
-                                            Test Men Test Men Test Men
-                                        </div>
-                                        <div class="created-date">
-                                            2021/07/15
-                                        </div>
-                                        <div class="conversation-message">
-                                            This is a message.This is a message.This is a message.This is a message.This
-                                            is a
-                                            message.
-                                        </div>
-                                    </div>
-                                    <div class="conversation">
-                                        <img src="img/FeMale.png" alt="Test Women" />
-                                        <div class="title-text">
-                                            Test Women Test Women Test Women
-                                        </div>
-                                        <div class="created-date">
-                                            2021/07/15
-                                        </div>
-                                        <div class="conversation-message">
-                                            This is a message.This is a message.This is a message.This is a message.This
-                                            is a
-                                            message.
-                                        </div>
-                                    </div>
-                                    <div class="conversation">
-                                        <img src="img/FeMale.png" alt="Test Women" />
-                                        <div class="title-text">
-                                            Test Women Test Women Test Women
-                                        </div>
-                                        <div class="created-date">
-                                            2021/07/15
-                                        </div>
-                                        <div class="conversation-message">
-                                            This is a message.This is a message.This is a message.This is a message.This
-                                            is a
-                                            message.
-                                        </div>
-                                    </div>
-                                    <div class="conversation">
-                                        <img src="img/FeMale.png" alt="Test Women" />
-                                        <div class="title-text">
-                                            Test Women Test Women Test Women
-                                        </div>
-                                        <div class="created-date">
-                                            2021/07/15
-                                        </div>
-                                        <div class="conversation-message">
-                                            This is a message.This is a message.This is a message.This is a message.This
-                                            is a
-                                            message.
-                                        </div>
-                                    </div>
-                                </div> -->
-                                <!-- 消費者清單 End-->
+                                </div> <!-- end chat-header -->
 
-                                <!-- <div id="new-message-container">
-                                </div> -->
+                                <div class="chat-history" id="chat-message-list">
+                                    <ul>
+                                        <li class="clearfix you-message">
+                                            <div class="message other-message float-right">
+                                                Hi Vincent, how are you?
+                                            </div>
+                                            <div class="message-data align-right">
+                                                <span class="message-data-time">2021/8/29 10:10</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end chat-history -->
 
-                                <div id="chat-title">
-                                    <span>TestMen</span>
-                                </div>
-
-                                <div id="chat-message-list">
-                                    <div class="message-row you-message">
-                                        <div class="message-text">我們在格線裡透過 grid-template-columns
-                                            與 grid-template-rows (en-US) 屬性定義了行與列。
-                                            它們也定義了格線軌道。格線軌道是在格線的兩個欄位之間的空隙。
-                                            下圖就會看到軌道的高亮：就在格線裡面的第一行。</div>
-                                        <div class="message-time">2021/07/15</div>
-                                    </div>
-                                    <div class="message-row other-message">
-                                        <div class="message-text">格線軌道可以使用任何單位定義，
-                                            不過格線引入了額外的單位，以助於建立有彈性的格線軌道。
-                                            新的單位 fr 代表格線容器內，可用空間的分塊（fraction）。
-                                            接下來的格線定義，會建立三個同等、且能依照可用空間縮放的長度軌道。</div>
-                                        <div class="message-time">2021/07/15</div>
-                                    </div>
-                                    <div class="message-row you-message">
-                                        <div class="message-text">我們在格線裡透過 grid-template-columns
-                                            與 grid-template-rows (en-US) 屬性定義了行與列。
-                                            它們也定義了格線軌道。格線軌道是在格線的兩個欄位之間的空隙。
-                                            下圖就會看到軌道的高亮：就在格線裡面的第一行。</div>
-                                        <div class="message-time">2021/07/15</div>
-                                    </div>
-                                    <div class="message-row other-message">
-                                        <div class="message-text">格線軌道可以使用任何單位定義，
-                                            不過格線引入了額外的單位，以助於建立有彈性的格線軌道。
-                                            新的單位 fr 代表格線容器內，可用空間的分塊（fraction）。
-                                            接下來的格線定義，會建立三個同等、且能依照可用空間縮放的長度軌道。</div>
-                                        <div class="message-time">2021/07/15</div>
-                                    </div>
-                                    <div class="message-row you-message">
-                                        <div class="message-text">我們在格線裡透過 grid-template-columns
-                                            與 grid-template-rows (en-US) 屬性定義了行與列。
-                                            它們也定義了格線軌道。格線軌道是在格線的兩個欄位之間的空隙。
-                                            下圖就會看到軌道的高亮：就在格線裡面的第一行。</div>
-                                        <div class="message-time">2021/07/15</div>
-                                    </div>
-                                    <div class="message-row other-message">
-                                        <div class="message-text">格線軌道可以使用任何單位定義，
-                                            不過格線引入了額外的單位，以助於建立有彈性的格線軌道。
-                                            新的單位 fr 代表格線容器內，可用空間的分塊（fraction）。
-                                            接下來的格線定義，會建立三個同等、且能依照可用空間縮放的長度軌道。</div>
-                                        <div class="message-time">2021/07/15</div>
-                                    </div>
-                                </div>
-
-                                <div id="chat-form">
-                                    <img src="img/attachment.svg" alt="Add Attachment" />
-                                    <input type="text" placeholder="type a message" />
-                                    <button type="button" class="chat-submit">送出訊息</button>
-                                </div>
-                            </div>
-                        </div>
+                                <div class="chat-message clearfix" id="chat-form">
+                                    <input type="text" name="message-to-send" id="message-to-send"
+                                        placeholder="Type your message">
+                                    <input type="hidden" name="action" value="insert">
+                                    <button class="chat-submit" id="sendmessage"> 送出訊息</button>
+                                </div> <!-- end chat-message -->
+                            </div> <!-- end chat -->
+                        </div> <!-- end container -->
                     </div>
                 </div>
-
-                <!-- <頁數選擇欄位> -->
-                <!-- <section class="bg-light py-10">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                            <div class="col-lg-2" style="border: solid red;">
-                            <div class="col-lg-10"></div>
-                        </div>
-                            nav aria-label="Page navigation example">
-                                <ul class="pagination pagination-blog justify-content-center">
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#!" aria-label="Previous"><span aria-hidden="true">«</span></a>
-                                    </li>
-                                    <li class="page-item active"><a class="page-link" href="#!">1</a></li>
-                                    <li class="page-item"><a class="page-link" href="#!">2</a></li>
-                                    <li class="page-item"><a class="page-link" href="#!">3</a></li>
-                                    <li class="page-item disabled"><a class="page-link" href="#!">...</a></li>
-                                    <li class="page-item"><a class="page-link" href="#!">12</a></li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#!" aria-label="Next"><span aria-hidden="true">»</span></a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="svg-border-rounded text-dark">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"></svg>
-                        </div>
-                    </section> -->
-
-
-            </main>
         </div>
-        <div id="layoutDefault_footer">
-            <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
-                <div class="container">
-                    <div class="row">
-                        <span id="contactService">
-                            <a class="col-md-12">聯絡客服</a>
-                        </span>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" style="color: #DFDFDF;">&copy; 2021 All Rights Reserved. 版權所有 不得轉載</div>
-                    </div>
+    </div>
+    </div>
+
+    </main>
+    </div>
+    <div id="layoutDefault_footer">
+        <footer class="footer pt-10 pb-5 mt-auto bg-dark footer-dark">
+            <div class="container">
+                <div class="row">
+                    <span id="contactService">
+                        <a class="col-md-12">聯絡客服</a>
+                    </span>
                 </div>
-            </footer>
-        </div>
+                <div class="row">
+                    <div class="col-md-12" style="color: #DFDFDF;">&copy; 2021 All Rights Reserved. 版權所有 不得轉載</div>
+                </div>
+            </div>
+        </footer>
+    </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
     <script src="js/Customize.js"></script>
+    <!-- Include Handlebars from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <script id="message-template" type="text/x-handlebars-template">
+        <li class="clearfix you-message">
+            <div class="message other-message float-right">
+                {{messageOutput}}
+            </div>
+            <div class="message-data align-right">
+                <span class="message-data-time" >{{time}}</span>
+            </div>
+        </li>
+    </script>
+    <script type="text/javascript">
+        (function () {
+
+            var chat = {
+                messageToSend: '',
+                init: function () {
+                    this.cacheDOM();
+                    this.bindEvents();
+                    this.render();
+                },
+                cacheDOM: function () {
+                    this.$chatHistory = $('.chat-history');
+                    this.$button = $('button');
+                    this.$text = $('#message-to-send');
+                    this.$chatHistoryList = this.$chatHistory.find('ul');
+                },
+                bindEvents: function () {
+                    this.$button.on('click', this.addMessage.bind(this));
+                    this.$text.on('keyup', this.addMessageEnter.bind(this));
+                },
+                render: function () {
+                    this.scrollToBottom();
+                    if (this.messageToSend.trim() !== '') {
+                        var template = Handlebars
+                            .compile($("#message-template").html());
+                        var context = {
+                            messageOutput: this.messageToSend,
+                            time: this.getCurrentTime()
+                        };
+                        this.$chatHistoryList.append(template(context));
+                        this.scrollToBottom();
+                        this.$text.val('');
+                    }
+                },
+
+                addMessage: function () {
+                    this.messageToSend = this.$text.val()
+                    this.render();
+                },
+                addMessageEnter: function (event) {
+                    // enter was pressed
+                    if (event.keyCode === 13) {
+                        this.addMessage();
+                    }
+                },
+                scrollToBottom: function () {
+                    this.$chatHistory
+                        .scrollTop(this.$chatHistory[0].scrollHeight);
+                },
+                getCurrentTime: function () {
+                    var today = new Date();
+                    var date = today.getFullYear() + '/'
+                        + (today.getMonth() + 1) + '/' + today.getDate();
+                    var time = today.getHours() + ":" + today.getMinutes();
+                    var CurrentDateTime = date + ' ' + time;
+                    return CurrentDateTime
+                },
+                getRandomItem: function (arr) {
+                    return arr[Math.floor(Math.random() * arr.length)];
+                }
+            };
+            chat.init();
+        })();
+    </script>
+
+
+
+
 </body>
 
 </html>
